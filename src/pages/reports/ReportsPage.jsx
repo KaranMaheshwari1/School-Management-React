@@ -3,7 +3,7 @@ import Navbar from '../../components/common/Navbar'
 import Sidebar from '../../components/common/Sidebar'
 import Card from '../../components/common/Card'
 import { useAuth } from '../../context/AuthContext'
-import { reportService } from '../../services/reportService'
+import { reportService } from '../../services/reportservice'
 import './ReportsPage.css'
 
 /**
