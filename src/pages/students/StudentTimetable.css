@@ -1,0 +1,92 @@
+/* StudentTimetable.css */
+.timetable-container {
+  overflow-x: auto;
+  margin-top: var(--spacing-md);
+}
+
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.timetable-table th,
+.timetable-table td {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.timetable-table th {
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.time-slot {
+  background: var(--bg-secondary);
+  font-weight: 600;
+}
+
+.time-info strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.time-info small {
+  color: var(--text-secondary);
+}
+
+.timetable-cell {
+  min-height: 80px;
+  padding: var(--spacing-sm);
+}
+
+.subject-block {
+  background: var(--bg-card);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.subject-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.teacher-name {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+
+.break-cell {
+  background: #fff3e0;
+  color: #f57c00;
+  font-weight: 600;
+}
+
+.empty-slot {
+  color: var(--text-secondary);
+}
+
+.legend-container {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.legend-color {
+  width: 40px;
+  height: 30px;
+  border-radius: 4px;
+}

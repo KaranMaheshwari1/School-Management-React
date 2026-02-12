@@ -1,0 +1,94 @@
+/* NoticeBoard.css */
+.notice-filters {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 2px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.notices-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.notice-card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  border-left: 4px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.notice-card.priority-danger { border-left-color: #f44336; }
+.notice-card.priority-warning { border-left-color: #ff9800; }
+.notice-card.priority-info { border-left-color: #2196f3; }
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.notice-title-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.notice-icon {
+  font-size: 32px;
+}
+
+.notice-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.priority-badge, .type-badge, .audience-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-badge.danger { background: #ffebee; color: #c62828; }
+.priority-badge.warning { background: #fff3e0; color: #f57c00; }
+.priority-badge.info { background: #e3f2fd; color: #1976d2; }
+
+.notice-content p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.notice-footer {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}

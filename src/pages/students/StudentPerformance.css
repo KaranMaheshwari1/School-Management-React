@@ -1,0 +1,288 @@
+/* Student Performance Page Styles
+   File: frontend/src/pages/students/StudentPerformance.css */
+
+.page-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.stat-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--border-color);
+}
+
+.stat-card.blue { border-left-color: #2196f3; }
+.stat-card.green { border-left-color: #4caf50; }
+.stat-card.purple { border-left-color: #9c27b0; }
+.stat-card.orange { border-left-color: #ff9800; }
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.stat-card.blue .stat-icon {
+  background: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.stat-card.green .stat-icon {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.stat-details h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-details p {
+  margin: 4px 0 0 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Exam Performance */
+.exam-performance-card {
+  padding: var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+}
+
+.exam-performance-card:last-child {
+  margin-bottom: 0;
+}
+
+.exam-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.exam-header h3 {
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.exam-type-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.exam-summary {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-item strong {
+  display: block;
+  font-size: 24px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.summary-item span {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+/* Subjects Grid */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.subject-performance {
+  padding: var(--spacing-md);
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.subject-name {
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.subject-marks {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.marks-obtained {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.marks-separator {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.marks-max {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* Grade Badges */
+.grade-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.grade-badge.grade-Aplus { background: #1b5e20; color: white; }
+.grade-badge.grade-A { background: #2e7d32; color: white; }
+.grade-badge.grade-Bplus { background: #558b2f; color: white; }
+.grade-badge.grade-B { background: #7cb342; color: white; }
+.grade-badge.grade-C { background: #fbc02d; color: #333; }
+
+.grade-Aplus { color: #1b5e20; }
+.grade-A { color: #2e7d32; }
+.grade-Bplus { color: #558b2f; }
+.grade-B { color: #7cb342; }
+
+/* Attendance */
+.attendance-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.attendance-stat {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+}
+
+.attendance-stat h4 {
+  margin: 0;
+  font-size: 32px;
+  color: var(--text-primary);
+}
+
+.attendance-stat p {
+  margin: var(--spacing-xs) 0 0 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.attendance-stat.present h4 { color: #4caf50; }
+.attendance-stat.absent h4 { color: #f44336; }
+.attendance-stat.percentage h4 { color: #2196f3; }
+
+/* Behavior */
+.behavior-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.behavior-item {
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.behavior-item label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.behavior-value {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.remarks-section {
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.remarks-section h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--primary-color);
+}
+
+.remarks-section p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exam-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .exam-summary {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .behavior-grid {
+    grid-template-columns: 1fr;
+  }
+}

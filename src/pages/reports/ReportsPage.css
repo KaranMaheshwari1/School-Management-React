@@ -1,0 +1,119 @@
+/* ReportsPage.css */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.report-card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.report-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.report-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: white;
+}
+
+.report-icon.blue { background: linear-gradient(135deg, #2196f3, #1976d2); }
+.report-icon.green { background: linear-gradient(135deg, #4caf50, #388e3c); }
+.report-icon.purple { background: linear-gradient(135deg, #9c27b0, #7b1fa2); }
+.report-icon.orange { background: linear-gradient(135deg, #ff9800, #f57c00); }
+.report-icon.teal { background: linear-gradient(135deg, #00bcd4, #0097a7); }
+.report-icon.red { background: linear-gradient(135deg, #f44336, #d32f2f); }
+
+.report-card h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.report-card p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.report-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.report-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+}
+
+.stat-item h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.recent-reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.recent-report-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+}
+
+.report-info {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.report-file-icon {
+  font-size: 32px;
+}
+
+.report-file-icon.pdf {
+  color: #f44336;
+}
+
+.report-file-icon.excel {
+  color: #4caf50;
+}
+
+@media (max-width: 768px) {
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+}

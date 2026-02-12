@@ -1,0 +1,69 @@
+/* Not Found Page Styles
+   File: frontend/src/pages/NotFound.css */
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 120px;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.not-found h2 {
+  font-size: var(--font-size-2xl);
+  color: white;
+  margin: var(--spacing-lg) 0;
+  font-weight: 600;
+}
+
+.not-found p {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-xl);
+  max-width: 500px;
+}
+
+.not-found .btn {
+  background: white;
+  color: var(--primary-color);
+  padding: 14px 32px;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  display: inline-block;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.not-found .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .not-found h1 {
+    font-size: 80px;
+  }
+
+  .not-found h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .not-found p {
+    font-size: var(--font-size-md);
+  }
+}

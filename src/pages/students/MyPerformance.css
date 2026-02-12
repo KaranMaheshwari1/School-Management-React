@@ -1,0 +1,428 @@
+/* My Performance - Student View
+   File: css/MyPerformance.css */
+
+.performance-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border-radius: var(--border-radius);
+  padding: var(--spacing-2xl);
+  margin-bottom: var(--spacing-lg);
+  color: white;
+}
+
+.hero-main {
+  display: flex;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.hero-circle {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+.percentage-display h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.percentage-display p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.hero-details {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.hero-stat {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.hero-icon {
+  font-size: 32px;
+  opacity: 0.9;
+}
+
+.hero-stat h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.hero-stat p {
+  margin: 4px 0 0 0;
+  opacity: 0.8;
+  font-size: var(--font-size-sm);
+}
+
+.hero-stat.improvement h3 {
+  color: #81c784;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.stat-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  align-items: center;
+}
+
+.stat-card.blue { border-left: 4px solid #2196f3; }
+.stat-card.green { border-left: 4px solid #4caf50; }
+.stat-card.purple { border-left: 4px solid #9c27b0; }
+.stat-card.orange { border-left: 4px solid #ff9800; }
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.stat-card.blue .stat-icon {
+  background: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.stat-card.green .stat-icon {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.stat-card h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stat-card p {
+  margin: 4px 0 0 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Exam Cards */
+.exam-card {
+  padding: var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+}
+
+.exam-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.exam-card-header h3 {
+  margin: 0 0 4px 0;
+}
+
+.exam-type {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.exam-scores {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.score-item {
+  text-align: center;
+}
+
+.score-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.score-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+/* Subjects Performance */
+.subjects-performance {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.subject-card {
+  padding: var(--spacing-md);
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.subject-name {
+  font-weight: 600;
+  font-size: var(--font-size-md);
+}
+
+.subject-grade {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.grade-Aplus { background: #1b5e20; color: white; }
+.grade-A { background: #2e7d32; color: white; }
+.grade-Bplus { background: #558b2f; color: white; }
+.grade-B { background: #7cb342; color: white; }
+
+.subject-score {
+  margin-bottom: var(--spacing-md);
+}
+
+.score-large {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.score-divider {
+  margin: 0 8px;
+  color: var(--text-secondary);
+}
+
+.score-max {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.subject-comparison {
+  margin-top: var(--spacing-sm);
+}
+
+.comparison-bar {
+  height: 30px;
+  background: var(--gray-200);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--spacing-xs);
+}
+
+.comparison-fill {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  transition: width 0.5s ease;
+}
+
+.comparison-fill.my-score {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  z-index: 2;
+}
+
+.comparison-fill.class-avg {
+  background: rgba(33, 150, 243, 0.3);
+  z-index: 1;
+}
+
+.comparison-legend {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-xs);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-color.my-score {
+  background: #4caf50;
+}
+
+.legend-color.class-avg {
+  background: #2196f3;
+}
+
+/* Two Column Grid */
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.strength-list,
+.improvement-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.strength-item,
+.improvement-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+
+.strength-icon,
+.improvement-icon {
+  font-size: 24px;
+}
+
+/* Achievements */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.achievement-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  border-left: 4px solid #fbc02d;
+}
+
+.achievement-icon {
+  font-size: 40px;
+  color: #fbc02d;
+}
+
+.achievement-details h4 {
+  margin: 0 0 4px 0;
+  color: var(--text-primary);
+}
+
+.achievement-rank {
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.achievement-date {
+  margin: 4px 0 0 0;
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+
+/* Attendance Display */
+.attendance-display {
+  display: flex;
+  gap: var(--spacing-2xl);
+  align-items: center;
+  justify-content: center;
+}
+
+.attendance-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.attendance-stat-item {
+  text-align: center;
+}
+
+.attendance-stat-item .stat-number {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.attendance-stat-item .stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-main {
+    flex-direction: column;
+  }
+
+  .hero-details {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exam-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .subjects-performance {
+    grid-template-columns: 1fr;
+  }
+
+  .two-column-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-display {
+    flex-direction: column;
+  }
+}
